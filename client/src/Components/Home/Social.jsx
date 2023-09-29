@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container, Stack } from "react-bootstrap";
+import Translate from "../Utilities/Translate";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,6 +19,7 @@ export default function Social() {
         <Container className="social-list">
           <Stack direction="horizontal">
             <div className="ms-auto"></div>
+            <Translate/>
             <a href="https://www.facebook.com/Training-Placement-Cell-SGGS-Nanded-110045764789964">
               <FontAwesomeIcon className="social-btn" icon={faFacebook} />
             </a>

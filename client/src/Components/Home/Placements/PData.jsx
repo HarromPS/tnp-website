@@ -126,16 +126,16 @@ export const y2223 = [
 ];
 
 export const y2324 = [
-  { dept: "Chem", "Undergrad Total": 35, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "Civil", "Undergrad Total": 58, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "CSE", "Undergrad Total":147, "Undergrad Placed":3, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "Elec", "Undergrad Total":39, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "EXTC", "Undergrad Total":144, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
+
+  { dept: "Civil", "Undergrad Total": 61, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "CSE", "Undergrad Total":148, "Undergrad Placed":3, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "Elec", "Undergrad Total":40, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "EXTC", "Undergrad Total":146, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
   { dept: "Instru", "Undergrad Total":46, "Undergrad Placed":13, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "IT", "Undergrad Total":17, "Undergrad Placed":1, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "Mech", "Undergrad Total":67, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "Prod", "Undergrad Total":58, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
-  { dept: "Text", "Undergrad Total":0, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 }
+  { dept: "IT", "Undergrad Total":71, "Undergrad Placed":1, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "Mech", "Undergrad Total":68, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "Prod", "Undergrad Total":60, "Undergrad Placed":0, "Postgrad Total": 0, "Postgrad Placed": 0 },
+  { dept: "Text", "Undergrad Total":32, "Undergrad Placed":11, "Postgrad Total": 0, "Postgrad Placed": 0 }
 ];
 
 
@@ -151,7 +151,7 @@ export const y2324 = [
 
 //prettier-ignore
 export const yearwiseSummary = [
-  { "Year": "2023 Till Now", "BTech on roll": 694, "BTech placed": 17, "MTech on roll": 0, "MTech placed": 0, "Total placed": 0, "Average Package (LPA)": "7.76", "Package Range (LPA)": "5.3 - 10.48 LPA" },
+  { "Year": "2023 Till Now", "BTech on roll": 694, "BTech placed": 28, "MTech on roll": 0, "MTech placed": 0, "Total placed": 0, "Average Package (LPA)": "8.8", "Package Range (LPA)": "5.3 - 12+ LPA" },
   { "Year": "2022-23", "BTech on roll": 799, "BTech placed": 417, "MTech on roll": 44, "MTech placed": 0, "Total placed": 150, "Average Package (LPA)": "6.2 LPA", "Package Range (LPA)": "2.2 - 60 LPA" },
   { "Year": "2021-22", "BTech on roll": 772, "BTech placed": 412, "MTech on roll": 91, "MTech placed": 19, "Total placed": 431, "Average Package (LPA)": "4.7 LPA", "Package Range (LPA)": "3.0 - 52 LPA" },
   { "Year": "2020-21", "BTech on roll": 750, "BTech placed": 306, "MTech on roll": 123, "MTech placed": 29, "Total placed": 335, "Average Package (LPA)": "4.0 LPA", "Package Range (LPA)": "3.0 - 18 LPA" },

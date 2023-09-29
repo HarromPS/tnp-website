@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutInfo() {
   return (
     <>
-      <p className="about-info-box">
+      <div className="about-info-box">
         <p>
           Welcome to the Industry Liaison one-stop office which takes care of
           (a) Institute-Industry Liaison, (b) Institute-Alumni Liaison, and (c)
@@ -59,7 +59,7 @@ export default function AboutInfo() {
             up an impressive placement record.
           </li>
         </ul>{" "}
-      </p>
+      </div>
     </>
   );
 }

@@ -15,7 +15,7 @@ function EUpcoming(props) {
               </p>
             </div>
             <h6>Date: {props.date}</h6>
-            {/* <a href={props.link} target="_blank"><button className="ue-btn">Register Now</button></a> */}
+            <a href={props.link} target="_blank"><button className="ue-btn">Register Now</button></a>
             {/* <h6>00:00 am</h6> */}
           </div>
         </div>

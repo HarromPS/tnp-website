@@ -2,34 +2,35 @@ import React from "react";
 
 // import RNJoshi from "../../img/rnjoshi-sir.png";
 // import MBKokare from "../../img/kokare-sir.jpeg";
+import HatkarSir from "../../img/HatkarSir.jpg";
 import IGavakhore from "../../img/ishwar-sir.jpg";
 import TNPLogo from "../../img/TNP LOGO.png";
 
-import SharvariS from "../../img/team2023_2024/SHARVARI-MILIND-SALODKAR.jpg";
+import SharvariS from "../../img/team2023_2024/_2SHARVARI-MILIND-SALODKAR.jpg";
 import RoshanV from "../../img/team2023_2024/Roshan-Vishwakarma.jpg";
 import Mrunal from "../../img/team2023_2024/_2Mrunal-Yashwant-Dhuware.jpg";
-import OmSaiM from "../../img/team2023_2024/OMSAI-SANTOSH-MUTYALWAR.jpg";
-import ShreyasH from "../../img/team2023_2024/_2SHREYASH_SUNILRAO_HOLEY.jpeg";
-import SharayuM from "../../img/team2023_2024/_2SHARAYU-PURUSHOTTAM-MEGHARE.jpg";
-import RuchaP from "../../img/team2023_2024/_2RUCHA-JANARDHAN-PAKWANNE.jpg";
-import VaishnaviP from "../../img/team2023_2024/VAISHNAVI-GIRISH-PATIL.jpg";
-import ShushilB from "../../img/team2023_2024/SUSHIL-SUBHASH-BHOYBAR.jpg";
+import OmSaiM from "../../img/team2023_2024/_2OMSAI-SANTOSH-MUTYALWAR.jpg";
+import ShreyasH from "../../img/team2023_2024/_2_2SHREYASH_SUNILRAO_HOLEY.jpg";
+import SharayuM from "../../img/team2023_2024/_2_2SHARAYU-PURUSHOTTAM-MEGHARE.jpg";
+import RuchaP from "../../img/team2023_2024/_2_2RUCHA-JANARDHAN-PAKWANNE.jpg";
+import VaishnaviP from "../../img/team2023_2024/_2VAISHNAVI-GIRISH-PATIL.jpg";
+import ShushilB from "../../img/team2023_2024/_2SUSHIL-SUBHASH-BHOYBAR.jpg";
 import HariomS from "../../img/team2023_2024/_2Hariom-Pravin-Shivhare.jpeg";
-import ApoorvM from "../../img/team2023_2024/APOORV-ABHAY-MEHAR.JPG";
-import AkashV from "../../img/team2023_2024/AKASH-AMRESH-VISHWAKARMA-(2022BPR501).jpg";
-import HarshaC from "../../img/team2023_2024/HARSHA-VIVEKRAO-CHANAKHEKAR.jpg";
+import ApoorvM from "../../img/team2023_2024/_2APOORV-ABHAY-MEHAR.JPG";
+import AkashV from "../../img/team2023_2024/_2AKASH-AMRESH-VISHWAKARMA-(2022BPR501).jpg";
+import HarshaC from "../../img/team2023_2024/_2HARSHA-VIVEKRAO-CHANAKHEKAR.jpg";
 import MadanT from "../../img/team2023_2024/_2MADAN-DINESHRAO-TAMBADE.jpg";
-import AdityaS from "../../img/team2023_2024/ADITYA-AMBADAS-SAKHARE.jpg";
-import SakshiKal from "../../img/team2023_2024/_2SAKSHI-PRAVIN-KALYANKAR.jpg";
-import ShraddhaL from "../../img/team2023_2024/SHRADDHA-MOHAN-LOKHANDE.jpg";
-import VaishnaviG from "../../img/team2023_2024/_2VAISHNAVI-GANESH-GHUGE.jpg";
-import ShrutiW from "../../img/team2023_2024/SHRUTI-SHARAD-WAGH.jpg";
-import ChaitanyaK from "../../img/team2023_2024/CHAITANYA-SURENDRA-KULKARNI.jpg";
-import SanskrutiU from "../../img/team2023_2024/_2SANSKRUTI-SANJAY-UMARE.jpg";
+import AdityaS from "../../img/team2023_2024/_2_2ADITYA-AMBADAS-SAKHARE.jpg";
+import SakshiKal from "../../img/team2023_2024/_2_2SAKSHI-PRAVIN-KALYANKAR.jpg";
+import ShraddhaL from "../../img/team2023_2024/_SHRADDHA-MOHAN-LOKHANDE.jpg";
+import VaishnaviG from "../../img/team2023_2024/_2_2VAISHNAVI-GANESH-GHUGE.jpg";
+import ShrutiW from "../../img/team2023_2024/_2SHRUTI-SHARAD-WAGH.jpg";
+import ChaitanyaK from "../../img/team2023_2024/_2CHAITANYA-SURENDRA-KULKARNI.jpg";
+import SanskrutiU from "../../img/team2023_2024/_2_2SANSKRUTI-SANJAY-UMARE.jpg";
 import AyushT from "../../img/team2023_2024/AYUSH-BHOJRAJ-THOMBARE.jpg";
-import SnehalP from "../../img/team2023_2024/_2PAWAR-SNEHAL.jpg";
+import SnehalP from "../../img/team2023_2024/_2_2PAWAR-SNEHAL.jpg";
 import SakshiKul from "../../img/team2023_2024/_2SAKSHI-DINESH-KULKARNI.jpg";
-import TriveniC from "../../img/team2023_2024/_2TRIVENI-CHANDRAKANT-CHAUDHARI.jpg";
+import TriveniC from "../../img/team2023_2024/_2_2TRIVENI-CHANDRAKANT-CHAUDHARI.jpg";
 
 import Hexagons from "../../img/hexagons.png";
 
@@ -135,13 +136,13 @@ export default function NewTeam_23_24() {
           mail="tpo@sggs.ac.in"
           mail2="tnpcell@sggs.ac.in"
         />
-        {/* <HeadCard
-          img={RNJoshi}
-          name="Dr. Ravindra Joshi"
+        <HeadCard
+          img={HatkarSir}
+          name="Prof. S.S.Hatkar"
           designation="Dean (Industry Liaison), I/C TPO"
-          tel="+91 75884 28778"
+          tel="+91-2462-269182 (Office)"
           mail="tpo@sggs.ac.in"
-        /> */}
+        />
         <HeadCard
           img={IGavakhore}
           name="Mr. Ishwar Gavakhore"
@@ -198,7 +199,7 @@ export default function NewTeam_23_24() {
                 designation="HR Executive"
                 phone="9834107147"
                 mail="shreyasholey108@gmail.com"
-                lin="https://www.linkedin.com/in/sakshi-joshi-7a324520b"
+                lin="https://www.linkedin.com/in/shreyas-holey-69582826a"
               />
               <TeamCard
                 img={OmSaiM}

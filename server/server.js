@@ -13,7 +13,7 @@ app.use(cors());
 
 mongoose.connect(process.env.MONGOURI, (err) => {
   if (err) console.log(err);
-  else console.log("Conected to MongoDB");
+  else console.log("Connected to MongoDB");
 });
 
 app.use(express.json());
@@ -30,3 +30,5 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+

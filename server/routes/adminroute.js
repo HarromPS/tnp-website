@@ -8,6 +8,7 @@ router.post("/", async (req, res) => {
     const password = await Admin.findOne({ password: req.body.password });
     !password && res.status(401).json("Wrong password");
 
+    console.log(admin);
     res.status(200).json(admin);
   } catch (err) {
     console.log(err);

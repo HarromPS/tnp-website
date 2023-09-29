@@ -3,13 +3,13 @@ import Loading from "../../Utilities/Loading";
 import EUpcoming from "./EUpcoming";
 import EPast from "./EPast";
 import axios from "axios";
-import ipavimg from "../../../img/events/ipev.jpg";
+// import ipavimg from "../../../img/events/ipev.jpg";
 
-const ipavdesc = `The Indian Air Force, New Delhi, is organizing induction road drive on “Induction publicity exhibition vehicle” (IPEV) and guidance related to career, life and training in the IAF.
-There will be IPEV drive on 19th March and 20th March.
-IAF, DISHA has developed an Induction Publicity Exhibition Vehicle (IPEV) with a Flight simulator and other gadgets aimed at motivating the target group towards opting for IAF as a career.
-The drive is an effort by the IAF to benefit large cross section of capable and interested students to be part of the IAF.
-This is great opportunity for everyone as you will get to know the work experience of IAF. Also there will be one to one interaction with the IAF officers.`
+// const ipavdesc = `The Indian Air Force, New Delhi, is organizing induction road drive on “Induction publicity exhibition vehicle” (IPEV) and guidance related to career, life and training in the IAF.
+// There will be IPEV drive on 19th March and 20th March.
+// IAF, DISHA has developed an Induction Publicity Exhibition Vehicle (IPEV) with a Flight simulator and other gadgets aimed at motivating the target group towards opting for IAF as a career.
+// The drive is an effort by the IAF to benefit large cross section of capable and interested students to be part of the IAF.
+// This is great opportunity for everyone as you will get to know the work experience of IAF. Also there will be one to one interaction with the IAF officers.`
 
 function Events() {
   const [eventsList, setEventsList] = useState([
@@ -37,7 +37,7 @@ function Events() {
       }
     };
     fetchEventList();
-    console.log(eventsList);
+    // console.log(eventsList);
   }, []);
 
   return (
@@ -65,10 +65,13 @@ function Events() {
         <Loading size="80" width="10" speed="0.5" />
       ) : (
         <div>
+
           {eventsList.map((i) => {
+            console.log(i.eventDate);
             return (
-              <>
+
                 <EPast
+                  key = {i.eventDate}
                   name={i.eventName}
                   org={i.eventOrg}
                   desc={i.eventDesc}
@@ -83,8 +86,10 @@ function Events() {
                         })
                       : "-"
                   }
-                />
-              </>
+                >
+                  <img src="../../img/bg.png" alt="" />
+                </EPast>
+
             );
           })}
         </div>

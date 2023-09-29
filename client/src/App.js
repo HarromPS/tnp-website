@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home/Home";
@@ -13,17 +13,20 @@ function App() {
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
 
   return (
-    <div className="App">
-      <AdminContext.Provider value={{ isAdminLoggedIn, setIsAdminLoggedIn }}>
-        <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/admin/signin" element={<AdminSignin />} />
-          <Route path="/admin/console/*" element={<AdminRouter />} />
-          {/*<Route path="/user/:action" element={<Signup />} />*/}
-          <Route path="/verifycert/:uniqueid" element={<VerifyCertificate />} />
-        </Routes>
-      </AdminContext.Provider>
-    </div>
+    <>
+        <div className="App">
+      {/* <Translate/> */}
+          <AdminContext.Provider value={{ isAdminLoggedIn, setIsAdminLoggedIn }}>
+            <Routes>
+              <Route path="/*" element={<Home />} />
+              <Route path="/admin/signin" element={<AdminSignin />} />
+              <Route path="/admin/console/*" element={<AdminRouter />} />
+              {/*<Route path="/user/:action" element={<Signup />} />*/}
+              <Route path="/verifycert/:uniqueid" element={<VerifyCertificate />} />
+            </Routes>
+          </AdminContext.Provider>
+        </div>
+    </>
   );
 }
 export default App;

@@ -19,18 +19,20 @@ import Cognologix from "../../img/Posters2223/COGNOLOGIX.png";
 // import EnH from "../../img/Posters2223/e&h.png";
 import Elastik from "../../img/Posters2223/ELASTIK.png";
 import Iauro from "../../img/Posters2223/iauro.png";
-import Infinichains from "../../img/Posters2223/Infinichains.png";
+// import Infinichains from "../../img/Posters2223/Infinichains.png";
 import Kratin from "../../img/Posters2223/KRATIN.png";
 import Microsoft from "../../img/Posters2223/MICROSOFT.png";
 import RSL1 from "../../img/Posters2223/RSL 1.png";
 import RSL2 from "../../img/Posters2223/RSL 2.png";
 import Sarvaha from "../../img/Posters2223/Sarvaha.png";
-import Scandid from "../../img/Posters2223/SCANDID.png";
+// import Scandid from "../../img/Posters2223/SCANDID.png";
 import TCS from "../../img/Posters2223/TCS DIGITAL.png";
 import Tejas from "../../img/Posters2223/TEJAS NETWORK.png";
 // import TIAA from "../../img/Posters2223/TIAA.png";
 import Trident2 from "../../img/Posters2223/TRIDENT.png";
 import Trident from "../../img/Posters2223/Trident Group.png";
+import Trident_23_24_12LPA from "../../img/Posters23-24/trident_12Lpa.jpg";
+import sarvaha_7_5LPA from "../../img/Posters23-24/sarvaha_7_5LPA.jpg";
 
 const Carousel = () => {
   return (
@@ -58,6 +60,9 @@ const Carousel = () => {
         <img src={Amazon} style={{ width: "100%" }} alt="Poster 3" />
       </SwiperSlide>
       <SwiperSlide>
+        <img src={Trident_23_24_12LPA} style={{ width: "100%" }} alt="Poster 3" />
+      </SwiperSlide>
+      <SwiperSlide>
         <img src={Tejas} className="d-block w-100" alt="Poster 4" />
       </SwiperSlide>
       <SwiperSlide>
@@ -65,6 +70,9 @@ const Carousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img src={Iauro} className="d-block w-100" alt="Poster 5" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={sarvaha_7_5LPA} className="d-block w-100" alt="Poster 6" />
       </SwiperSlide>
       <SwiperSlide>
         <img src={RSL1} className="d-block w-100" alt="Poster 6" />
@@ -96,12 +104,12 @@ const Carousel = () => {
       <SwiperSlide>
         <img src={Elastik} className="d-block w-100" alt="Poster 15" />
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <img src={Infinichains} className="d-block w-100" alt="Poster 16" />
       </SwiperSlide>
       <SwiperSlide>
         <img src={Scandid} className="d-block w-100" alt="Poster 16" />
-      </SwiperSlide>
+      </SwiperSlide> */}
     </Swiper>
   );
 };

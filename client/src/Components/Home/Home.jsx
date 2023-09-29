@@ -17,12 +17,7 @@ import Events from "./Events/Events";
 import AboutInfo from "./AboutInfo"; //About
 import Director from "./Director";
 import NewTeam_23_24 from "./NewTeam_23_24"; //NewTeam
-// import Team from "./Team";
-// import OldTeams from "./OldTeams/OldTeams";
-// import Charts from "./Charts";
-// import Alumni from "./Alumni";
 import Footer from "./Footer";
-// import Help from "./Help";
 
 const scrollBehavior = { top: "0", left: "0", behavior: "smooth" };
 
@@ -36,7 +31,7 @@ const Homepage = () => {
         let res = await axios.get(
           `${process.env.REACT_APP_REQURL}/admin/events/getall/`
         );
-        // console.log("Server online!");
+        // console.log(res);
       } catch (err) {
         console.log(err);
       }
@@ -63,7 +58,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <h1 class="homepage-headings">About Us</h1>
+      <h1 className="homepage-headings">About Us</h1>
       <AboutInfo />
       <Director />
       <center>
@@ -101,7 +96,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <h1 class="homepage-headings">Contact Us</h1>
+      <h1 className="homepage-headings">Contact Us</h1>
       <NewTeam_23_24 />
     </>
   );

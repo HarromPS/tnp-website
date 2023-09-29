@@ -11,11 +11,11 @@ export default function Counts() {
             <Stack id="count-center">
               <CountUp
                 className="counterNum"
-                end={434}
+                end={436}
                 duration={3}
                 useEasing={true}
               />
-              Placed Students
+              Placed Students This Year
             </Stack>
           </Col>
           <Col>
@@ -26,7 +26,7 @@ export default function Counts() {
                 duration={3}
                 useEasing={true}
               />
-              Total Offers
+              Total Offers This Year
             </Stack>
           </Col>
           <Col>

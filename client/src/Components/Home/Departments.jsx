@@ -5,13 +5,13 @@ import {
   faTv,
   faFlask,
   faBuilding,
-  faPaintRoller,
-  faDatabase,
+  faMicrochip,
+  faPlugCircleBolt,
   faLaptopCode,
-  faList,
+  faScrewdriverWrench,
   faCogs,
-  faAnchor,
-  faCompactDisc,
+  faVestPatches,
+  faHandsHoldingCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Departments() {
@@ -53,7 +53,7 @@ export default function Departments() {
             </Col>
             <Col lg="3" md="4">
               <div className="icon-box">
-                <FontAwesomeIcon className="faico" icon={faPaintRoller} />
+                <FontAwesomeIcon className="faico" icon={faMicrochip} />
                 <h3>
                   <a href="https://www.sggs.ac.in/home/page/electronics-and-telecommunication-engineering">
                     Electronics And Telecommunication Engineering
@@ -63,7 +63,7 @@ export default function Departments() {
             </Col>
             <Col lg="3" md="4">
               <div className="icon-box">
-                <FontAwesomeIcon className="faico" icon={faDatabase} />
+                <FontAwesomeIcon className="faico" icon={faPlugCircleBolt} />
                 <h3>
                   <a href="https://www.sggs.ac.in/home/page/electrical-engineering">
                     Electrical Engineering
@@ -83,7 +83,7 @@ export default function Departments() {
             </Col>
             <Col lg="3" md="4">
               <div className="icon-box">
-                <FontAwesomeIcon className="faico" icon={faList} />
+                <FontAwesomeIcon className="faico" icon={faScrewdriverWrench} />
                 <h3>
                   <a href="https://www.sggs.ac.in/home/page/instrumentation-engineering">
                     Instrumentation Engineering
@@ -103,7 +103,7 @@ export default function Departments() {
             </Col>
             <Col lg="3" md="4">
               <div className="icon-box">
-                <FontAwesomeIcon className="faico" icon={faAnchor} />
+                <FontAwesomeIcon className="faico" icon={faVestPatches} />
                 <h3>
                   <a href="https://www.sggs.ac.in/home/page/department-of-textile-technology-">
                     Textile Technology
@@ -113,7 +113,7 @@ export default function Departments() {
             </Col>
             <Col lg="3" md="4">
               <div className="icon-box">
-                <FontAwesomeIcon className="faico" icon={faCompactDisc} />
+                <FontAwesomeIcon className="faico" icon={faHandsHoldingCircle} />
                 <h3>
                   <a href="https://www.sggs.ac.in/home/page/department-of-production-engineering">
                     Production Engineering

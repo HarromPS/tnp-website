@@ -2,9 +2,9 @@ import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import RNJoshi from "../../img/RN joshi sir 3.jpg";
-import YVJoshi from "../../img/joshi sir.jpg";
-import ARPatil from "../../img/arpatil-sir.jpeg";
+// import RNJoshi from "../../img/RN joshi sir 3.jpg";
+// import YVJoshi from "../../img/joshi sir.jpg";
+// import ARPatil from "../../img/arpatil-sir.jpeg";
 import MBKokare from "../../img/kokare-sir.jpeg";
 import TNPLogo from "../../img/TNP LOGO.png";
 
@@ -24,8 +24,8 @@ export default function Director() {
               </center>
               <div className="scrollable">
                 <p className="dir-details">
-                  <p>Greetings and a very warm welcome to SGGSIE&T!</p>
-                  <p>
+                  <span>Greetings and a very warm welcome to SGGSIE&T!</span>
+                  <span>
                     With a vision of education of human power for technological
                     excellence, Shri Guru Gobind Singhji Institute of
                     Engineering and Technology stands as one of the prestigious
@@ -33,8 +33,8 @@ export default function Director() {
                     provides you with the opportunities to empower you with the
                     present technologies, with ever enthusiastic faculty to
                     familiarize the students with future technology trends.
-                  </p>
-                  <p>
+                  </span>
+                  <span>
                     The purpose of education is to transform proactive learners
                     into self-actualized learners. Students are encouraged to
                     harness their inquisitive skills with proactive learning,
@@ -43,8 +43,8 @@ export default function Director() {
                     equip our students to face the technological problems of the
                     future and imbibe Universal Human Values for sustainable
                     achievements.
-                  </p>
-                  <p>
+                  </span>
+                  <span>
                     Engineering is about acquiring profound knowledge. A system
                     of profound knowledge consists of four parts appreciation of
                     the system, knowledge about variation, theory of knowledge
@@ -55,8 +55,8 @@ export default function Director() {
                     Students can learn through various mechanisms such as
                     classrooms, MOOC courses, alumni associations, experts in
                     the industry, working in laboratories and various others.
-                  </p>
-                  <p>
+                  </span>
+                  <span>
                     Many of our students are entrepreneurs who are ready to
                     support the start-up companies on campus. A significant
                     number of students pursue higher studies in India and
@@ -67,19 +67,19 @@ export default function Director() {
                     the students with their dream jobs (internships), resulting
                     in a win-win situation for the student and the hiring
                     organization.
-                  </p>
-                  <p>
+                  </span>
+                  <span>
                     I look forward to the placement season 2022-23 and wish the
                     students all the best.
-                  </p>
+                  </span>
 
-                  <p>
+                  <span>
                     Warm regards
                     <br />
                     Dr M. B. Kokare
                     <br />
                     Director, SGGSIE&T, Nanded
-                  </p>
+                  </span>
                 </p>
               </div>
             </Container>

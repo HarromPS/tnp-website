@@ -4,7 +4,7 @@ import PGraph from "./PGraph";
 import PList from "./PList";
 import { yearwiseSummary } from "./PData";
 
-import Graph from "../Graph";
+// import Graph from "../Graph";
 import Recruiters from "../Recruiters";
 
 const PTable = () => {
@@ -24,7 +24,7 @@ const PTable = () => {
 
           {yearwiseSummary.map((i) => {
             return (
-              <tr key={i}>
+              <tr key={i["Year"]}>
                 <td>{i["Year"]}</td>
                 <td>{i["BTech on roll"]}</td>
                 <td>{i["BTech placed"]}</td>

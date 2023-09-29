@@ -89,7 +89,7 @@
   color: #0d6efd;
 }
 
-#navlink {
+.navLink {
   width: 100%;
   white-space: nowrap;
   font-size: 14px;
@@ -99,11 +99,11 @@
   cursor: pointer;
 }
 
-#navlink:hover {
+.navLink:hover {
   color: #0d6efd;
 }
 
-#navlink:focus-visible {
+.navLink:focus-visible {
   outline: none;
 }
 
@@ -118,7 +118,7 @@
   right: 16px;
 }
 
-.nav-contact-drop #navlink {
+.nav-contact-drop .navLink {
   padding: 8px 16px;
 }
 
@@ -223,7 +223,10 @@
 
 .inst-name {
   height: 100%;
+  text-align: center;
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .inst-name p {
@@ -268,18 +271,21 @@
   }
   .inst-name p {
     font-size: 70px;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 512px) {
   .inst-name p {
     font-size: 40px;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 352px) {
   .inst-name p {
     font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -875,7 +881,7 @@ td {
 
 /* TEAM */
 .st-team {
-  background-color: #222;
+  background-color: #3c3c3c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -884,7 +890,7 @@ td {
 }
 
 .st-team-card {
-  background-color: #111;
+  background-color: #232323ed;
   border-radius: 8px;
   display: flex;
   width: 110px;
@@ -907,7 +913,8 @@ td {
   font-size: 14px;
   margin-top: 8px;
   text-decoration: underline;
-  text-decoration-color: var(--primary-blue);
+  /* text-decoration-color: var(--primary-blue); */
+  text-decoration-color: #ffffff;
 }
 
 .st-team-card h4 {
@@ -917,7 +924,8 @@ td {
 }
 
 .st-team-card a {
-  color: var(--primary-blue);
+  /* color: var(--primary-blue); */
+  color: #5cefff;
 }
 
 .st-team-card .team-links {
@@ -934,9 +942,10 @@ td {
 }
 
 .st-team-group {
-  border: solid 4px #fff;
   margin: 16px;
   padding: 8px;
+  border: solid 4px #fff;
+  border-radius: 20px;
 }
 
 .st-team-group h3 {
@@ -1430,4 +1439,23 @@ td {
     right: 5vh;
     bottom: 5vh;
   }
+}
+
+
+/* .goog-te-combo{
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: var(--muli);
+}
+.goog-te-combo option{
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: var(--muli);
+}
+
+*/
+.cm-img{
+  text-align: center;
 }

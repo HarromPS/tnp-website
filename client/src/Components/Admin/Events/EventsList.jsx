@@ -17,6 +17,7 @@ export default function EventsList() {
           `${process.env.REACT_APP_REQURL}/admin/events/getall/`
         );
         setEventsList(res.data);
+        // console.log(res.data);
       } catch (err) {
         console.log(err);
       }
