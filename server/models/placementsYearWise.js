@@ -5,7 +5,8 @@ const PlacementsYearWiseSchema = mongoose.Schema(
     {
         Year: {
             type: String,
-            required: true
+            required: true,
+            unique: true
         },
         BTechOnRoll: {
             type: Number,
@@ -36,7 +37,7 @@ const PlacementsYearWiseSchema = mongoose.Schema(
             required:true
         }
     },
-    { collection: "placements" }
+    { collection: "placementsYearWise" }
 );
 
 // collection name: placementsYearWise
