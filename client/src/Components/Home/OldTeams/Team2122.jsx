@@ -130,7 +130,7 @@ function Team2122() {
               <TeamCard
                 img={kshdha}
                 name="Kshitij Dhanvij"
-                designation="HR Executive & Departmental Coordinator"
+                designation="HR & Departmental Coordinator"
                 phone="#"
                 mail="#"
                 linkedin="#"
@@ -194,7 +194,7 @@ function Team2122() {
                 linkedin="https://www.linkedin.com/in/nitin-kode-81a1291ab"
               />
               <TeamCard
-                designation="Media & Website Executive"
+                designation="Media Executive"
                 name="Om Futariya"
                 img={omfuta}
                 phone="tel:9359858126"
@@ -215,7 +215,7 @@ function Team2122() {
             <h3>Content & Website Executives</h3>
             <div className="st-team-contents">
               <TeamCard
-                designation="Website & Content Creation Executive"
+                designation="Content Executive"
                 name="Om Futariya"
                 img={omfuta}
                 phone="tel:9359858126"
@@ -223,7 +223,7 @@ function Team2122() {
                 linkedin="https://www.linkedin.com/in/om-futariya-060a95214"
               />
               <TeamCard
-                designation="Content Creation Executive"
+                designation="Content Executive"
                 name="Tanmay Deshmukh"
                 img={tandes}
                 phone="tel:9767097542"
@@ -236,7 +236,7 @@ function Team2122() {
             <h3>Workshop Executives</h3>
             <div className="st-team-contents">
               <TeamCard
-                designation="Workshop Executive & Departmental Coordinator"
+                designation="Workshop & Departmental Coordinator"
                 name="Kapil Kapse"
                 img={kapkap}
                 phone="tel:9356708071"

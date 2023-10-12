@@ -110,7 +110,7 @@ const TeamCard = (props) => {
 export default function NewTeam() {
   return (
     <>
-      <div className="head-container">
+      {/* <div className="head-container">
         <div className="head-bg head-bg-one">
           <img src={Hexagons} alt="" />
         </div>
@@ -125,21 +125,21 @@ export default function NewTeam() {
           mail="tpo@sggs.ac.in"
           mail2="tnpcell@sggs.ac.in"
         />
-        {/* <HeadCard
+        <HeadCard
           img={RNJoshi}
           name="Dr. Ravindra Joshi"
           designation="Dean (Industry Liaison), I/C TPO"
           tel="+91 75884 28778"
           mail="tpo@sggs.ac.in"
-        /> */}
-        {/* <HeadCard
+        />
+        <HeadCard
           img={IGavakhore}
           name="Mr. Ishwar Gavakhore"
           designation="Training & Placement Office Assistant"
           tel="+91 75078 77206"
           mail="tnpcell@sggs.ac.in"
-        /> */}
-      </div>
+        />
+      </div> */}
       <div className="st-team">
         <h2
           className="text-center team-main-text new-font"

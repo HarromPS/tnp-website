@@ -51,24 +51,26 @@ export default function CertificateList() {
         <h4>Existing Certificates</h4>
         <table>
           <tbody>
-            <tr>
-              {tableHeaders.map((i) => {
-                return <th>{i}</th>;
-              })}
-            </tr>
+              <tr>
+                <th>Unique URL ID</th>
+                <th>Recipent</th>
+                <th>Issue Date</th>
+                <th>Entry Date</th>
+                <th>Delete</th>
+              </tr>
             {certlist.map((i) => {
               return (
-                <tr>
+                <tr key={i._id}>
                   <td>{i._id}</td>
                   <td>{i.recipent}</td>
                   <td>
                     {i.issued
                       ? new Date(i.issued).toLocaleDateString("en-gb", {
-                          weekday: "long",
-                          year: "numeric",
-                          month: "numeric",
-                          day: "numeric",
-                        })
+                        weekday: "long",
+                        year: "numeric",
+                        month: "numeric",
+                        day: "numeric",
+                      })
                       : "-"}
                   </td>
                   <td>

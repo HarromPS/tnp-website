@@ -47,7 +47,7 @@ export default function AdminNavbar() {
               Manage Events
             </NavLink>
           </li>
-          <li style={{ flex: "1" }}>
+          <li >
             <NavLink
               to="./cert/"
               style={({ isActive }) =>
@@ -55,6 +55,36 @@ export default function AdminNavbar() {
               }
             >
               Certificate Verification
+            </NavLink>
+          </li>
+          <li >
+            <NavLink
+              to="./yearwise"
+              style={({ isActive }) =>
+                isActive ? { color: "#2af" } : { color: "#fff" }
+              }
+            >
+              YearWise Placements
+            </NavLink>
+          </li>
+          <li >
+            <NavLink
+              to="./graphrecords"
+              style={({ isActive }) =>
+                isActive ? { color: "#2af" } : { color: "#fff" }
+              }
+            >
+              Graph Records
+            </NavLink>
+          </li>
+          <li >
+            <NavLink
+              to="./deptwise"
+              style={({ isActive }) =>
+                isActive ? { color: "#2af" } : { color: "#fff" }
+              }
+            >
+              Department Wise Placements
             </NavLink>
           </li>
           <li>

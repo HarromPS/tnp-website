@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../../Utilities/Loading";
-import EUpcoming from "./EUpcoming";
+// import EUpcoming from "./EUpcoming";
 import EPast from "./EPast";
 import axios from "axios";
-// import ipavimg from "../../../img/events/ipev.jpg";
-
-// const ipavdesc = `The Indian Air Force, New Delhi, is organizing induction road drive on “Induction publicity exhibition vehicle” (IPEV) and guidance related to career, life and training in the IAF.
-// There will be IPEV drive on 19th March and 20th March.
-// IAF, DISHA has developed an Induction Publicity Exhibition Vehicle (IPEV) with a Flight simulator and other gadgets aimed at motivating the target group towards opting for IAF as a career.
-// The drive is an effort by the IAF to benefit large cross section of capable and interested students to be part of the IAF.
-// This is great opportunity for everyone as you will get to know the work experience of IAF. Also there will be one to one interaction with the IAF officers.`
 
 function Events() {
   const [eventsList, setEventsList] = useState([
@@ -67,28 +60,28 @@ function Events() {
         <div>
 
           {eventsList.map((i) => {
-            console.log(i.eventDate);
+            console.log(i._id);
             return (
 
-                <EPast
-                  key = {i.eventDate}
-                  name={i.eventName}
-                  org={i.eventOrg}
-                  desc={i.eventDesc}
-                  type={i.eventType}
-                  date={
-                    i.eventDate
-                      ? new Date(i.eventDate).toLocaleDateString("en-gb", {
-                          weekday: "long",
-                          year: "numeric",
-                          month: "numeric",
-                          day: "numeric",
-                        })
-                      : "-"
-                  }
-                >
-                  <img src="../../img/bg.png" alt="" />
-                </EPast>
+              <EPast key={i.eventDate}
+                dataKey={i._id}
+                name={i.eventName}
+                org={i.eventOrg}
+                desc={i.eventDesc}
+                type={i.eventType}
+                date={
+                  i.eventDate
+                    ? new Date(i.eventDate).toLocaleDateString("en-gb", {
+                      weekday: "long",
+                      year: "numeric",
+                      month: "numeric",
+                      day: "numeric",
+                    })
+                    : "-"
+                }
+              >
+                <img src="../../img/bg.png" alt="" />
+              </EPast>
 
             );
           })}

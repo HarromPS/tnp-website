@@ -13,11 +13,12 @@ import {
 export default function YearData(props) {
   const [isOpen, setIsOpen] = useState(false);
   const contentdiv = useRef();
-
+  // console.log('Data being passed to chart:', props.senddata);
+  console.log(props.label);
   return (
     <>
       <div className="p-collapsible">
-        <button onClick={() => setIsOpen(!isOpen)}>{props.label}</button>
+        <button style={{ textAlign: "center" }} onClick={() => setIsOpen(!isOpen)}>{props.label}</button>
         <div
           className="p-content"
           ref={contentdiv}
@@ -28,6 +29,8 @@ export default function YearData(props) {
           }
         >
           <div className="p-parent">
+
+            {/* Bar Chart to display the placement records of Under graduate students  */}
             <ResponsiveContainer height={300} width="100%">
               <BarChart
                 data={props.senddata}
@@ -38,14 +41,16 @@ export default function YearData(props) {
                   bottom: 50,
                 }}
               >
-                <XAxis dataKey="dept" />
+                <XAxis dataKey="Department" interval={0} tick={{ fontSize: 8 }} />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="Undergrad Total" stackId="a" fill="#8884d8" />
-                <Bar dataKey="Undergrad Placed" stackId="a" fill="#aaa6fa" />
+                <Bar dataKey="UndergradTotal" stackId="a" fill="#a7e937" />
+                <Bar dataKey="UndergradPlaced" stackId="a" fill="#aaa6fa" />
               </BarChart>
             </ResponsiveContainer>
+
+            {/* Bar Chart to display the placement records of Post graduate students  */}
             <ResponsiveContainer height={300} width="100%">
               <BarChart
                 data={props.senddata}
@@ -56,12 +61,13 @@ export default function YearData(props) {
                   bottom: 50,
                 }}
               >
-                <XAxis dataKey="dept" />
+                <XAxis dataKey="Department" interval={0} tick={{ fontSize: 8 }}/>
+                {/* <XAxis dataKey="Department" textAnchor="end" /> */}
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="Postgrad Total" stackId="b" fill="#82ca9d" />
-                <Bar dataKey="Postgrad Placed" stackId="b" fill="#a4ecaf" />
+                <Bar dataKey="PostgradTotal" stackId="b" fill="#259B9A" />
+                <Bar dataKey="PostgradPlaced" stackId="b" fill="#a7e937" />
               </BarChart>
             </ResponsiveContainer>
           </div>

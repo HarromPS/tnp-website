@@ -16,7 +16,8 @@ import Placements from "./Placements/Placements";
 import Events from "./Events/Events";
 import AboutInfo from "./AboutInfo"; //About
 import Director from "./Director";
-import NewTeam_23_24 from "./NewTeam_23_24"; //NewTeam
+import OldTeamTab from "../Home/OldTeams/oldTeamsTab"; //old team
+import NewTeam_23_24 from "./NewTeam_23_24"; //NewTeawm
 import Footer from "./Footer";
 
 const scrollBehavior = { top: "0", left: "0", behavior: "smooth" };
@@ -135,6 +136,7 @@ export default function Home() {
         <Route path="/events" element={<Events />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/prevteam" element={<OldTeamTab />} />
         {/* <Route path="/contactus/previous" element={<OldTeams />} /> */}
         {/* <Route path="/gethelp" element={<Help />} /> */}
       </Routes>

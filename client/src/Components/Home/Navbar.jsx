@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import { Container } from "react-bootstrap";
 import { Navbar as BSNavbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -8,6 +8,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import TNPLogo from "../../img/TNP LOGO.png";
 import SGGSLogo from "../../img/sggs.png";
 // import Translate from "./Translate";
+
+// using gsap library to animate the containers, texts, etc
+import { gsap } from "gsap";
+import { AdminContext } from "../../App";
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const isLoggedIn = true;
 const username = "User";
@@ -39,9 +45,45 @@ const LoginButton = () => {
 };
 
 export default function Navbar() {
+  // Register ScrollTrigger with GSAP
+  // gsap.registerPlugin(ScrollTrigger);
+
+  const rootElement = useContext(AdminContext);
+
+  const { root } = rootElement;
+
+  // using layout effect hook to run animations just after DOM renders
+  useLayoutEffect(() => {
+
+    // creating gsap context to apply animations
+    let ctx = gsap.context(() => {
+      // selector ".logo-text"
+      gsap.from("#navbar-brand", {
+        x: -450,
+        duration: 2,
+        scale: 1,
+        scrollTrigger: {
+          // on target element
+          trigger: "#navbar-brand ",
+
+          // on what we are scrolling
+          scroller: "navbar",
+
+          markers: true,
+          start: "top 30%",
+          end: "top: 70%"
+
+        }
+      });
+
+    }, root);
+
+    return ()=> ctx.revert();
+  },[]);
+
   return (
     <>
-      <BSNavbar className="navbar" bg="light" sticky="top">
+      <BSNavbar className="navbar" bg="light" sticky="top" ref={root}>
         <Container>
           <BSNavbar.Brand id="navbar-brand" href="/">
             <img className="logo-img" src={SGGSLogo} alt="" />
@@ -55,7 +97,7 @@ export default function Navbar() {
             </span>
           </BSNavbar.Brand>
         </Container>
-        <Container>
+        <Container >
           <Nav className="desktop-navmenu ms-auto">
             <Link className="navLink" to="/">
               Home

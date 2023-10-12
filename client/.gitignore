@@ -27,3 +27,6 @@ yarn-error.log*
 # script files
 ./img/main.py
 A:\TNP\Tnp site\tnp-website\client\src\img\team2023_2024\Extras
+
+# unwanted text files
+./unknown.txt

@@ -93,7 +93,7 @@ export default function Director() {
                 <hr />
               </center>
               <div className="scrollable">
-                <p className="dir-details">
+                <div className="dir-details">
                   <p>A hearty welcome to SGGSIE&T!</p>
                   <p>
                     The Institute is committed to providing state-of-the-art
@@ -133,7 +133,7 @@ export default function Director() {
                     <br />
                     SGGSIE&T, Nanded
                   </p>
-                </p>
+                </div>
               </div>
             </Container>
           </Col>

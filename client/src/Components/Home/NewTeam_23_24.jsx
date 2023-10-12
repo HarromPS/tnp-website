@@ -1,4 +1,6 @@
 import React from "react";
+// import React, { useRef, useLayoutEffect } from "react";
+// import { gsap } from "gsap";
 
 // import RNJoshi from "../../img/rnjoshi-sir.png";
 // import MBKokare from "../../img/kokare-sir.jpeg";
@@ -24,7 +26,7 @@ import AdityaS from "../../img/team2023_2024/_2_2ADITYA-AMBADAS-SAKHARE.jpg";
 import SakshiKal from "../../img/team2023_2024/_2_2SAKSHI-PRAVIN-KALYANKAR.jpg";
 import ShraddhaL from "../../img/team2023_2024/_SHRADDHA-MOHAN-LOKHANDE.jpg";
 import VaishnaviG from "../../img/team2023_2024/_2_2VAISHNAVI-GANESH-GHUGE.jpg";
-import ShrutiW from "../../img/team2023_2024/_2SHRUTI-SHARAD-WAGH.jpg";
+import ShrutiW from "../../img/team2023_2024/_2_2SHRUTI-SHARAD-WAGH.jpg";
 import ChaitanyaK from "../../img/team2023_2024/_2CHAITANYA-SURENDRA-KULKARNI.jpg";
 import SanskrutiU from "../../img/team2023_2024/_2_2SANSKRUTI-SANJAY-UMARE.jpg";
 import AyushT from "../../img/team2023_2024/AYUSH-BHOJRAJ-THOMBARE.jpg";
@@ -40,9 +42,10 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import OldTeams from "./OldTeams/oldTeamsTab";
+// import OldTeams from "./OldTeams/oldTeamsTab";
 
 const HeadCard = (props) => {
+
   return (
     <Container className="contact" id="contactus" fluid>
       <Container className="contact-main">
@@ -80,6 +83,7 @@ const HeadCard = (props) => {
 };
 
 const TeamCard = (props) => {
+
   return (
     <div className="st-team-card">
       <img src={props.img} alt="image" />
@@ -109,26 +113,18 @@ const TeamCard = (props) => {
 
 export default function NewTeam_23_24() {
 
-  // function changeCall(){
-  //   return true;
-  // }
-
   return (
     <>
-      <div className="head-container">
+      <div  className="head-container">
         <div className="head-bg head-bg-one">
           <img src={Hexagons} alt="" />
         </div>
         <div className="head-bg head-bg-two">
-          <img src={Hexagons} alt="" />
+          <img src={Hexagons} alt=""  />
         </div>
 
-         {/* button for previous teams */}
-         {/* <div style={{ marginTop: "40px" }}>
-          <Link to="./Home/OldTeams/Team22_23"><button id="prevBtn" className="ui-btn">Previous Teams</button></Link>
-        </div> */}
-
         <HeadCard
+          id="TNP-office"
           img={TNPLogo}
           name="Training & Placement Office"
           //designation="Director"
@@ -165,7 +161,7 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={SharvariS}
-                name="Sharvari Milind Salodkar"
+                name="Sharvari Salodkar"
                 designation="Training & Placement Secretary"
                 phone="9421738331"
                 mail="2021bit027@sggs.ac.in"
@@ -183,11 +179,12 @@ export default function NewTeam_23_24() {
           </div>
 
           <div className="st-team-group">
-            <h3>HR Executives</h3>
+            {/* <h3 className="hr" onClick={onClickEvent}>HR Executives </h3> */}
+            <h3 >HR Executives </h3>
             <div className="st-team-contents">
               <TeamCard
                 img={Mrunal}
-                name="Mrunal Yashwant Dhuware "
+                name="Mrunal Dhuware "
                 designation="HR Executive"
                 phone="9307983723"
                 mail="2021bin006@sggs.ac.in"
@@ -195,7 +192,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={ShreyasH}
-                name="Shreyas Sunilrao Holey "
+                name="Shreyas Holey "
                 designation="HR Executive"
                 phone="9834107147"
                 mail="shreyasholey108@gmail.com"
@@ -217,7 +214,7 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={SharayuM}
-                name="Sharayu Purushottam Meghare "
+                name="Sharayu Meghare "
                 designation="DBMS Executive"
                 phone="7410015224"
                 mail="2021bcs082@sggs.ac.in"
@@ -239,7 +236,7 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={VaishnaviP}
-                name="Vaishnavi Girish Patil "
+                name="Vaishnavi Patil "
                 designation="Placement Drive Executive"
                 phone="9403320885"
                 mail="2021bcs054@sggs.ac.in"
@@ -247,7 +244,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={ShushilB}
-                name="Sushil Subhash Bhoybar"
+                name="Sushil Bhoybar"
                 designation="Placement Drive Executive"
                 phone="9970308955"
                 mail="2021bcs073@sggs.ac.in"
@@ -261,24 +258,24 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={HariomS}
-                name="Hariom Pravin Shivhare"
+                name="Hariom Shivhare"
                 designation="Website Executive"
                 phone="8767008518"
                 mail="2021bit046@sggs.ac.in"
-              lin="https://www.linkedin.com/in/hariom-shivhare-a32803290/"
+                lin="https://www.linkedin.com/in/hariom-shivhare-a32803290/"
               />
               <TeamCard
                 img={ApoorvM}
-                name="Apoorv Abhay Mehar "
-                designation="Social Media & Website Executive"
+                name="Apoorv Mehar "
+                designation="Media & Website Executive"
                 phone="9699150078"
                 mail="2021bcs091@sggs.ac.in"
                 lin="https://www.linkedin.com/in/apoorv-abhay-mehar-1587a325b"
               />
               <TeamCard
                 img={AkashV}
-                name="Akash Amresh Vishwakarma "
-                designation="Social Media & Website Executive"
+                name="Akash Vishwakarma "
+                designation="Media & Website Executive"
                 phone="7756991100"
                 mail="2022bpr501@sggs.ac.in"
                 lin="https://www.linkedin.com/in/akash-vishwakarma-9b59751b7"
@@ -305,15 +302,15 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={HarshaC}
-                name="Harsha Vivek Chanakhekar "
+                name="Harsha Chanakhekar "
                 designation="Workshop & Internship Executive"
-                phone="8668843990"
+                phone="9307983723"
                 mail="2021bpr013@sggs.ac.in"
                 lin="https://www.linkedin.com/in/harsha-chanakhekar-a992aa25a"
               />
               <TeamCard
                 img={AdityaS}
-                name="Aditya Ambadas Sakhare"
+                name="Aditya Sakhare"
                 designation="Workshop & Internship Executive"
                 phone="7350241681"
                 mail="2021bit038@sggs.ac.in"
@@ -327,7 +324,7 @@ export default function NewTeam_23_24() {
             <div className="st-team-contents">
               <TeamCard
                 img={SakshiKal}
-                name="Sakshi Pravin Kalyankar"
+                name="Sakshi Kalyankar"
                 designation="Departmental Coordinator (CSE)"
                 phone="7385775631"
                 mail="2021bcs094@sggs.ac.in"
@@ -335,15 +332,15 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={ShraddhaL}
-                name="Shraddha Mohan Lokhande"
-                designation="Departmental Coordinator (IT)"
+                name="Shraddha Lokhande"
+                designation={`Departmental Coordinator (IT)`}
                 phone="9373129722"
                 mail="2021bit041@sggs.ac.in"
                 lin="linkedin.com/in/shraddha-lokhande-527827250"
               />
               <TeamCard
                 img={VaishnaviG}
-                name="Vaishnavi Ganesh Ghuge "
+                name="Vaishnavi Ghuge "
                 designation="Departmental Coordinator (EXTC)"
                 phone="9075515019"
                 mail="2021bec043@sggs.ac.in"
@@ -351,15 +348,15 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={ShrutiW}
-                name="Shruti Sharad Wagh"
+                name="Shruti Wagh"
                 designation="Departmental Coordinator (Electrical)"
-                phone="7588795608"
+                phone="7559382531"
                 mail="shrutiwagh350@gmail.com"
                 lin="https://www.linkedin.com/in/shruti-wagh-887617250"
               />
               <TeamCard
                 img={ChaitanyaK}
-                name="Chaitanya Surendra Kulkarni"
+                name="Chaitanya Kulkarni"
                 designation="Departmental Coordinator (Mechanical)"
                 phone="8261845309"
                 mail="chaitanya.kul6@gmail.com"
@@ -367,7 +364,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={SanskrutiU}
-                name="Sanskruti Sanjay Umare "
+                name="Sanskruti Umare "
                 designation="Departmental Coordinator (Chemical)"
                 phone="8855956044"
                 mail="sanskrutiumare2003@gmail.com"
@@ -375,7 +372,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={AyushT}
-                name="Ayush Bhojraj Thombare "
+                name="Ayush Thombare "
                 designation="Departmental Coordinator (Textile)"
                 phone="9923250217"
                 mail="2022btt501@sggs.ac.in "
@@ -383,7 +380,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={SnehalP}
-                name="Snehal Shridhar Pawar"
+                name="Snehal Pawar"
                 designation="Departmental Coordinator (Production)"
                 phone="7972969464"
                 mail="2021bpr009@sggs.ac.in"
@@ -399,7 +396,7 @@ export default function NewTeam_23_24() {
               />
               <TeamCard
                 img={SakshiKul}
-                name="Sakshi Dinesh Kulkarni "
+                name="Sakshi Kulkarni "
                 designation="Departmental Coordinator (Civil)"
                 phone="9307810193"
                 mail="Kulsakshi2003@gmail.com"
@@ -408,9 +405,15 @@ export default function NewTeam_23_24() {
             </div>
           </div>
         </div>
-
-
       </div>
+        {/* button for previous teams */}
+        <div className="prev-team-container" style={{ margin: "40px" }}>
+          <Link to="/prevteam"><button id="prevBtn" className="ui-btn">Previous Teams</button></Link>
+        </div>
     </>
   );
 }
+
+
+// http://localhost:3000/contactus/Home/OldTeams/Team22_23
+// http://localhost:3000/contactus

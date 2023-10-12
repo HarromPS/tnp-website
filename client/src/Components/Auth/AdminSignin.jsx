@@ -10,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./AdminSignin.css";
 import TNPLogo from "../../img/TNP LOGO.png";
 import axios from "axios";
+import { text } from "@fortawesome/fontawesome-svg-core";
 
 function AdminSignin() {
   const { isAdminLoggedIn, setIsAdminLoggedIn } = useContext(AdminContext);
@@ -34,7 +35,7 @@ function AdminSignin() {
   }, [username, password]);
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     try {
       const res = await axios.post(
@@ -44,6 +45,7 @@ function AdminSignin() {
           password,
         }
       );
+      console.log("logged in");
 
       setUsername("");
       setPassword("");
@@ -131,10 +133,10 @@ function AdminSignin() {
           </div>
         </div>
       )}
-      <div className="sufooter">
-        <p>
-          Back to <Link to="/">home</Link>.
-        </p>
+      <div className="container sufooter" style={{
+        textAlign: "center"
+      }}>
+        <Link to="/"><button>Back to Home</button></Link>.
       </div>
     </>
   );

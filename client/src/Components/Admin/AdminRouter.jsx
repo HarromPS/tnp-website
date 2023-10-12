@@ -4,6 +4,9 @@ import AdminNavbar from "./AdminNavbar";
 import AdminHome from "./AdminHome";
 import EventsHome from "./Events/EventsHome";
 import CertificateHome from "./Certificate/CertificateHome";
+import {YearWise} from "./Placements/YearWise";
+import {GraphRecords} from "./Placements/GraphRecords";
+import {DeptWise} from "./Placements/DeptWise";
 
 import { AdminContext } from "../../App";
 
@@ -20,6 +23,9 @@ export default function AdminRouter() {
         <Route path="/" element={<AdminHome />} />
         <Route path="/events" element={<EventsHome />} />
         <Route path="/cert" element={<CertificateHome />} />
+        <Route path="/yearwise" element={<YearWise />} />
+        <Route path="/graphrecords" element={<GraphRecords />} />
+        <Route path="/deptwise" element={<DeptWise />} />
       </Routes>
       <div className="copyright">
         copyright @2021 SGGSIE&T. All Rights Reserved.

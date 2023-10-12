@@ -1,16 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
+import { AdminContext } from "../../../App";
 import PGraph from "./PGraph";
 import PList from "./PList";
-import { yearwiseSummary } from "./PData";
+// import { yearwiseSummary } from "./PData";
 
 // import Graph from "../Graph";
 import Recruiters from "../Recruiters";
 
 const PTable = () => {
+
+  // using context api to save all the states & use it all over the app
+  const graphContext = useContext(AdminContext);
+  const [yearTempData, setTempData] = useState([]);
+
+  const { getYearWiseAlldetails } = graphContext;
+  useEffect(() => {
+    // getAlldetails();
+    getYearWiseAlldetails().then((data) => setTempData(data));
+  }, []);
+
   return (
     <div className="p-table">
       <table>
+      <caption className="caption-top">
+        Year Wise Placement Record
+      </caption>
         <thead>
           <tr>
             <th>Year</th>
@@ -21,8 +36,7 @@ const PTable = () => {
           </tr>
         </thead>
         <tbody>
-
-          {yearwiseSummary.map((i) => {
+          {/* {yearwiseSummary.map((i) => {
             return (
               <tr key={i["Year"]}>
                 <td>{i["Year"]}</td>
@@ -30,6 +44,17 @@ const PTable = () => {
                 <td>{i["BTech placed"]}</td>
                 <td>{i["Average Package (LPA)"]}</td>
                 <td>{i["Package Range (LPA)"]}</td>
+              </tr>
+            );
+          })} */}
+          {yearTempData.reverse().map((item) => {
+            return (
+              <tr key={item.Year}>
+                <td>{item.Year}</td>
+                <td>{item.BTechOnRoll}</td>
+                <td>{item.BTechPlaced}</td>
+                <td>{item.AveragePackage}</td>
+                <td>{item.PackageRange}</td>
               </tr>
             );
           })}

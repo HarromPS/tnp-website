@@ -1,21 +1,33 @@
-import React from "react";
-import {
-  y1415,
-  y1516,
-  y1617,
-  y1718,
-  y1819,
-  y1920,
-  y2021,
-  y2122,
-  y2223,
-  y2324
-} from "./PData.jsx";
+import React, { useEffect, useState, useContext } from "react";
+import { AdminContext } from "../../../App";
+// import {
+//   y2021
+// } from "./PData.jsx";
 import { Container } from "react-bootstrap";
 
 import YearData from "./YearData";
 
 export default function PList() {
+  // using context api to save all the states & use it all over the app
+  const deptWiseData = useContext(AdminContext);
+  const [deptData, setDeptData] = useState([]);
+
+  const { getDeptAlldetails } = deptWiseData;
+
+  async function getDetails(){
+    // getAlldetails();
+    getDeptAlldetails().then((data) => {
+        let info = data;
+        info = info.sort((a, b) => {
+            return (Number.parseInt(a._id.slice(3)) - Number.parseInt(b._id.slice(3)));
+        }).reverse();
+        setDeptData(info);
+    });
+}
+useEffect(() => {
+    getDetails();
+}, []);
+
   return (
     <>
       <Container
@@ -27,19 +39,21 @@ export default function PList() {
         }}
       >
         <h3>
-          Year-wise Placement Record{" "}
+          Department Wise Yearly Placement Record{" "}
           <span style={{ fontSize: "15px" }}>(Click to expand)</span>
         </h3>
-        <YearData label="2023-2024" senddata={y2324} />
-        <YearData label="2022-2023" senddata={y2223} />
-        <YearData label="2021-2022" senddata={y2122} />
-        <YearData label="2020-2021" senddata={y2021} />
-        <YearData label="2019-2020" senddata={y1920} />
-        <YearData label="2018-2019" senddata={y1819} />
-        <YearData label="2017-2018" senddata={y1718} />
-        <YearData label="2016-2017" senddata={y1617} />
-        <YearData label="2015-2016" senddata={y1516} />
-        <YearData label="2014-2015" senddata={y1415} />
+        {
+          deptData.map((data) => {
+            const { _id, departments } = data; // Destructure the _id and departments from each object
+            return (
+              <>
+                <div key={_id }>
+                  <YearData key={_id} label={"20" + _id.substring(1, 3) + "-" + _id.substring(3)} senddata={departments} />
+                </div>
+              </>
+            );
+          })
+        }
       </Container>
     </>
   );
